@@ -1,0 +1,30 @@
+h1 {
+  background-color: aqua;
+  color: red;
+}
+
+h4 {
+  color: rgb(135, 135, 38);
+}
+
+.mainheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainheader h1:hover {
+  font-size: 50px;
+}
+.mainheader h1::after {
+  content: "is very different";
+}
+.mainheader h1::before {
+  content: "raman";
+}
+.mainheader p {
+  font-size: 50px;
+}
+.mainheader p:hover {
+  font-size: 100px;
+}/*# sourceMappingURL=main.css.map */

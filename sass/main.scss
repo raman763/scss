@@ -1,0 +1,52 @@
+@import '_mixing';
+@import '_var';
+
+h1{
+ background-color: aqua;
+ color: red;
+}
+
+//mixin
+//paritial
+
+ 
+
+
+//operators
+//variables
+
+
+h4{
+ color: $bg-color;
+}
+
+//nesting
+
+.mainheader{
+ @include flexrob;
+ h1{
+ 
+  // font-size: 100px;
+  &:hover{
+   //multiple parameter
+   @include commonCode(50px);
+   // font-size: 50px;
+  }
+  &::after{
+   content: "is very different";
+  }
+  &::before{
+   content: "raman";
+  }
+ }
+ 
+ p{
+  font-size: 50px;
+  &:hover{
+   font-size: 100px;
+  }
+ }
+ 
+}
+
+
